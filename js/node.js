@@ -145,7 +145,7 @@ app.controller("myCtrl", function($scope) {
 
 		$.get(host+'/job/'+job_id,success);		
 	}
-	$scope.well_known_nodes=["http://localhost:3000","http://mappy.tech:3000"];
+	$scope.well_known_nodes=["http://localhost:3000","https://node.mappy.tech"];
 	$scope.new_job=function(host){
 		if (host==undefined) host=$scope.well_known_nodes[Math.floor(Math.random()*$scope.well_known_nodes.length)];
 		if (!($scope.working)) return;
